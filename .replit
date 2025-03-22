@@ -1,6 +1,22 @@
 language = "c"
-run = "gcc -o hello /home/runner/project2/src/main.c"
+run = "gcc -o lab_tpmp_2 ~/workspace/src/main.c"
 modules = ["c-clang14"]
 
 [nix]
 channel = "stable-24_05"
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 40610143
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "gcc src/main.c -o lab_tpmp_2"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./lab_tpmp_2"
