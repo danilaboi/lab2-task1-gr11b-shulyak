@@ -1,11 +1,14 @@
-# Overview
+# Консольное приложение: Вариант 13
 
-It is public template of assignment `"labrabota 3"` for FPMI students
+## 📄 Overview
 
-# Usage
+Этот проект реализует консольное приложение на языке C, предназначенное для обработки чисел и информации об абонентах, согласно заданию варианта 13.
 
-Please, edit README and add some details, as instance **{add your last name, first name and group number}**.
+Автор: Шуляк Даниил Константинович, группа 11Б
 
-# Building
+## 🚀 Usage
 
-Please, import repository and use for repl.it project, which is defined in the assignment "labrabota 3".
+Программа компилируется с помощью GCC:
+
+```bash
+gcc -o labrabota3-1 src/labrabota3-1.c
